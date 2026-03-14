@@ -292,7 +292,7 @@ def procesar_comando(comando, tablero_jugador, tablero_npc):
     elif "tablero enemigo" in comando:
         print("\n TABLERO ENEMIGO:")
         mostrar_tablero(mostrar_tablero_enemigo(tablero_npc))
-        return "CONTINURAR"
+        return "CONTINUAR"
     
     elif "salir" in comando:
         return "SALIR"

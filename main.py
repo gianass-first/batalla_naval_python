@@ -1,5 +1,5 @@
 # %%
-from utils import crea_tablero, colocar_barcos, mostrar_tablero
+from utils import *
 
 # %%
 """
@@ -83,7 +83,7 @@ def jugar_batalla_naval():
             acierto = disparo_npc(tablero_jugador)
             
             print("\n TU TABLERO:")
-            print(tablero_jugador)
+            mostrar_tablero(tablero_jugador)
             
             # ===== Verificar si el NPC ganó =====
             if ha_ganado(tablero_jugador):
