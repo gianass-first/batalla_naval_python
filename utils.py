@@ -75,7 +75,7 @@ def coloca_barco_plus(tablero, barco, mostrar_info=True):
         tablero_temp[fila, columna] = "O"
 
         """
-        Si no hay problema alguno para colocar el barco, se infica con una "O"
+        Si no hay problema alguno para coloca el barco, se indica con una "O"
         """
 
     return tablero_temp
@@ -142,7 +142,7 @@ def coloca_barco(tablero, eslora=4, nombre="", num_intentos=100, mostrar_info=Tr
             return tablero_temp
         
         """
-        Si se logra colocar, se imprimen las coordenadas
+        Si se logra colocar, se imprimen las coordenadas (solo las del jugador)
         """
 
         if mostrar_info:
@@ -257,7 +257,7 @@ def disparo_npc(tablero_jugador):
     coordenada = (fila, columna)
 
     """
-    Se indica una coordenada aleatoria para la maquina que vaya del 0-9
+    Se indica una coordenada aleatoria para la maquina que vaya del 1-10
     """
 
     print(f"\n La maquina dispara a: ({fila + 1},{columna +1})")
@@ -266,7 +266,7 @@ def disparo_npc(tablero_jugador):
     recibir_disparo(tablero_jugador, coordenada)
 
     """
-    Con la misma funcion creada para recibir disparo, se aplica en el tablero del enemigo para que pueda recibir un disparo tabien
+    Con la misma funcion creada para recibir disparo, se aplica en el tablero del enemigo aleatoriamente para que pueda recibir un disparo tabien
     """
 
     return acierto
